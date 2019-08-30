@@ -138,7 +138,9 @@ A process digital twin is the highest level model. It provides a business-level 
 
 The generic concept looks like this:
 
+![Figure 8][Figure8]
 
+[Figure8]: https://github.com/marowid/presentations/blob/master/MTL/MTL2.png?raw=true "Figure8"
 
 In one of next chapters in this white paper we show an implementation example with AWS, as it provides a lot of ready made and managed services making such implementation possible as well as a PoC that we developed internally utilizing AWS Deep Racer cars.
 
@@ -177,7 +179,24 @@ Ok, we talked a lot about the concept and it's benefits. Now let's see how it ca
 
 ![Figure 9][Figure9]
 
-[Figure9]: https://github.com/marowid/presentations/MTL/blob/master/MTL.png?raw=true "Figure9"
+[Figure9]: https://github.com/marowid/presentations/blob/master/MTL/MTL.png?raw=true "Figure9"
+
+The key component that make this solution possible are:
+
+### AWS SageMaker
+This is a heart of MTL implementation on AWS. SageMaker is a service that provides every developer and data scientist with the ability to build, train, and deploy machine learning models quickly. Amazon SageMaker is a fully-managed service that covers the entire machine learning workflow to label and prepare your data, choose an algorithm, train the model, tune and optimize it for deployment, make predictions, and take action. In MTL concept it's the place where we are running models being important from different edges, evaluate their results and also use it to figure out micto step optimization plan.
+
+### AWS SageMaker Neo
+SageMaker Neo enables developers to train machine learning models once and run them anywhere in the cloud and at the edge. Amazon SageMaker Neo optimizes models to run up to twice as fast, with less than a tenth of the memory footprint, with no loss in accuracy. This is another crucial component for MTL, making it possible to use a model trained in the powerfull SageMaker instance and re-compile it for anb exact device running on the target edge and makes it execution efficient. You start with a machine learning model built using MXNet, TensorFlow, PyTorch, or XGBoost and trained using Amazon SageMaker. Then you choose your target hardware platform from Intel, NVIDIA, or ARM. With a single click, SageMaker Neo will then compile the trained model into an executable.
+
+### AWS GreenGrass ML Inference
+AWS IoT Greengrass makes it easy to perform machine learning inference locally on devices, using models that are created, trained, and optimized in the cloud. IoT Greengrass gives you the flexibility to use machine learning models in Amazon SageMaker or to bring your own pre-trained model stored in Amazon S3. This allows us to make MTL concept fully automated in terms of model management and deployment.
+
+### Digital Twin Simulation
+Based on IoT devices shadows that we have in our repository we are able to build a full digital twin of an asset, device, system or even a full process. This allows us to:
+- have an abstraction layer hiding a complexity of IoT devices comming from different vendors
+- have a safe simulation environment where we can evaluate different models
+- build a full near real time visualization if needed
 
 ## Solution example results with Amazon Deep Racer
 
