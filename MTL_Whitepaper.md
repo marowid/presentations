@@ -175,6 +175,10 @@ Thanks to using cloud services we can avoid a lot of this complexity, as many di
 
 Ok, we talked a lot about the concept and it's benefits. Now let's see how it can be realized. AWS based implementation of an MTL concept looks like this:
 
+![Figure 9][Figure9]
+
+[Figure9]: https://github.com/marowid/presentations/blob/master/MTL.png?raw=true "Figure9"
+
 ## Solution example results with Amazon Deep Racer
 
 As we wanted to have also a public showcase of this concept we implementd above solution in house wiht AWS Deep Racer. This is a simple component level digital twin with just a few parameters nevertheless it nicely shows the benefits of MTL.
