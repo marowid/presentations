@@ -177,7 +177,7 @@ Ok, we talked a lot about the concept and it's benefits. Now let's see how it ca
 
 ![Figure 9][Figure9]
 
-[Figure9]: https://github.com/marowid/presentations/blob/master/MTL.png?raw=true "Figure9"
+[Figure9]: https://github.com/marowid/presentations/MTL/blob/master/MTL.png?raw=true "Figure9"
 
 ## Solution example results with Amazon Deep Racer
 
