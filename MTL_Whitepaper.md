@@ -113,14 +113,14 @@ Source https://www.themanufacturer.com
 ## MTL Concept
 
 Mesh twin learning is a concept we figured out in PGS Software in response to our customers needs. Three main points behind it are:
-- we use digital twins to develop a dicital representation of a physical production line environment
-- we have IoT Edge deployed, utilizing fog computing principles having small TensorFlowLite model being run next to devices or on the factory IoT gateway
-- instead of sending a full real time data data stream we export a TensorFlowLite model and send the data in batches in some later time or not at all
+- we use digital twins to develop a digital representation of a physical production line environment
+- we have IoT Edge deployed, utilizing fog computing principles having small machine learning model being run next to devices or on the factory IoT gateway
+- instead of sending a full real time data data stream we export a machine learning model and send the data in batches in some later time or not at all
 - we keep a digital twin representation of the whole production line in the cloud, and have the models from different factories compete there
 - we are using reinforcement learning in the cloud to train even beter models
 - the best models are then pused to production back on the edge
 - in order to speed up the advancements process we are using micro optimization strategies by introducing small changes in single production parameters and observing the results, choosing the correct parameters and optimizations step is based on the simulations run in the cloud utilizing a digital twin and prediction models
-- we utilize automation and managed services from cloud providers, which means there is no need of buildin a new IT department to maintain such solution
+- we utilize automation and managed services from cloud providers, which means there is no need of building a new IT department to maintain such solution
 
 In MTL we use four different levels of digital twins: single component, asset, system and process.
 
@@ -157,10 +157,14 @@ The main benefits of using Mesh Twin Learning are:
 - Without globally recognized standards,the expansion of RFID and M2M solutions to the Internet of Things cannot reach a global scale
 - Clarification on the requirements for a unique global identification, naming and resolver is needed. Lack of convergence of the definition of common reference models, reference architecture for the future networks
 
+This however can be addressed by our approach of basing on the model exports to share learnings between sites instead of raw data.
+
 ### Complexity
 - building MTL solution requires very good knowledge about latest cloud services, combined with experience in machine learning, complex visualizations and industry knowledge
 - there are not many experienced vendors providing necesary competences and out of the box solutions will not exist any time soon due to too scattered market of IoT suppliers
 - making a project including couple of components or a single asset digital twin is something you can build as an MVP in couple of weeks but a full system or process digital twin, having all equipment conected and all relevant ML components implemented can take 2-3 years
+
+Thanks to using cloud services we can avoid a lot of this complexity, as many different components of MTL are offered by major vendors as managed sercices.
 
 ### It's brand new
 - MTL is a new concept, as it's enabled by the latest cloud services, and advancements in Machine Learning that were released in the begining of 2019
